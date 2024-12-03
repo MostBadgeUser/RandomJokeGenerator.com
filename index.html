@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Joke Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Castify - Login & Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add your styles here based on the provided CSS */
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Random Joke Generator</h1>
-        <p class="description">Need a laugh? Click below for a fresh joke!</p>
-        <button onclick="generateJoke()">Tell Me a Joke</button>
-        <div id="joke" class="joke-box"></div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Most_BadgeUser Network  aka Most_BadgeUser Company. All rights reserved.</p>
-    </footer>
+        <!-- Login Form -->
+        <div class="form-box" id="loginBox">
+            <h1>Welcome Back!</h1>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <a href="#" id="showSignup">Create an Account</a>
+            </form>
+        </div>
 
+        <!-- Signup Form -->
+        <div class="form-box" id="signupBox" style="display:none;">
+            <h1>Create an Account</h1>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <a href="#" id="showLogin">Already have an account?</a>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
